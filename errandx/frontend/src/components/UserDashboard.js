@@ -6,14 +6,14 @@ const UserDashboard = () => {
   const [refresh, setRefresh] = useState(false);
 
   const handleTaskCreated = () => {
-    setRefresh(!refresh); // trigger TaskList refresh
+    setRefresh(!refresh); 
   };
 
   return (
     <div>
       <h1>User Dashboard</h1>
       <TaskForm onTaskCreated={handleTaskCreated} />
-      <TaskList key={refresh} /> {/* key për rifreskim */}
+      <TaskList key={refresh} /> 
     </div>
   );
 };
